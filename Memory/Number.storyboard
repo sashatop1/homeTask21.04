@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="xMp-kp-RJT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIY-wV-2Nl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="NumberStoryboard" id="Lsn-gn-SYB" customClass="TableViewController" customModule="Memory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oRz-ME-bhR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyU-nB-8ml">
+                                <rect key="frame" x="142.5" y="320.5" width="90" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DyU-nB-8ml" firstAttribute="centerX" secondItem="hZ5-2T-Ttc" secondAttribute="centerX" id="TMG-aV-Gem"/>
+                            <constraint firstItem="DyU-nB-8ml" firstAttribute="centerY" secondItem="hZ5-2T-Ttc" secondAttribute="centerY" id="gbv-E9-JiL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hZ5-2T-Ttc"/>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="DyU-nB-8ml" id="koh-xi-nhq"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-800" y="-605"/>
+        </scene>
+    </scenes>
+</document>
